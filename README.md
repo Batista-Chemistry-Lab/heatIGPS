@@ -31,6 +31,13 @@ notebook to computed the principal components of motion of the trajectories and 
 
 the notebook reproduces the secondary structure persistency analysis as described in the article (Figure 3,D).
 
+- DPCN
+minimal code to reproduce the DPCN analysis
+
+
+- TEMP_COEFF
+Raw data and instructions to reproduce the temperature coefficients analysis in figure 4a,b
+
 ### Molecular Dynamics trajectories can be accessed at the following [link](https://drive.google.com/drive/folders/12WVo_dA5RvSZW2rvhB1rd8CxVz3Cb-CA?usp=sharing)
 
 
