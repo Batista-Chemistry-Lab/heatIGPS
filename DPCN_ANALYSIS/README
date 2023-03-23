@@ -1,0 +1,37 @@
+Context
+The content of this folter is distributed as part of the article:
+
+**Turning Up the Heat Mimics Allosteric Signaling in Imidazole-Glycerol Phosphate Synthase**
+
+by *Federica Maschietto, Uriel N. Morzan, Florentina Tofoleanu, Aria Gheeraert, Apala Chaudhuri, Gregory W. Kyro, Peter Nekrasov, Bernard Brooks, J. Patrick Loria, Ivan Rivalta, Victor S. Batista*
+
+The following commands can be used to reproduce the DPCN analysis described in section  *Allosteric activation vs. temperature increase: a structural perspective* of the article.
+
+
+The source code to run the DPCN analysis can be downloaded from the Git repository by Aria Gheeraert at the following link:
+[pmdlearn](https://github.com/agheeraert/pmdlearn)
+
+The dpcn networks discussed in the paper are saved in the two binary files below
+
+DPCN_asymmetric_NH.dfp 
+dpcn.dfp
+
+Figure 3E in the paper can be reproduced using the following commands
+
+run `pymol igps.py` (in this folder)
+
+the holo30 - apo30 can be visualized as:
+draw_from_df('dpcn.dfp', w2='30H', w1='30', color_sign=True)
+and the apo 50 - apo30 as:
+draw_from_df('dpcn.dfp', w2='50', w1='30', color_sign=True)
+
+One may want to display the same normalization factor for the edge size in different figures. This can be done as:\
+draw_from_df('dpcn.dfp', w2='30H', w1='30', color_sign=True, edge_norm=20)
+draw_from_df('dpcn.dfp', w2='50', w1='30', color_sign=True, edge_norm=20)
+
+
+To display only one amino acid network without coloring:
+draw_from_df('dpcn.dfp', weight='30H')
+
+
+
