@@ -34,7 +34,8 @@ notebook to computed the principal components of motion of the trajectories and 
 the notebook reproduces the secondary structure persistency analysis as described in the article (Figure 3,D).
 
 - DPCN
-minimal code to reproduce the DPCN analysis
+minimal code to reproduce the DPCN analysis:
+more information on DPCM can be found at the original repository by Aria Gheeraert: https://github.com/agheeraert/pmdlearn
 
 
 - TEMP_COEFF
